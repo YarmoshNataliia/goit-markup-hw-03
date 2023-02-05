@@ -14,10 +14,50 @@
   --typical-lh: 1.5;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 body {
   font-family: 'Roboto', sans-serifl;
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+.peage-header-container {
+  display: flex;
+}
+.dflist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .link {
@@ -27,9 +67,21 @@ body {
 .list {
   list-style: none;
 }
+
+.section {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
 /* ---------------HEADER-------------------- */
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
 .header-navigation {
+  display: flex;
+  align-items: center;
 }
 .header-logo {
   font-family: 'Raleway';
@@ -40,6 +92,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+
+  
+  margin-right: 76px;
 }
 .header-logo > span {
   font-family: 'Raleway';
@@ -51,8 +106,11 @@ body {
   color: #4d5ae5;
 }
 .hader-list {
+  display: flex;
+  align-items: center;
 }
-.header-item {
+.header-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .header-link {
@@ -69,6 +127,15 @@ body {
 
 /* address */
 .address {
+   margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+}
+.address-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .address-tel, .address-mailo {
@@ -87,6 +154,8 @@ body {
 /* ------------СЕККЦІЯ1--HERRO---------------- */
 .hero {
   background-color: var(--second-bg-dark-color);
+  height: 600px;
+  text-align: center;
 }
 .hero-title {
   font-size: 56px;
@@ -94,16 +163,23 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+ margin-bottom: 48px;
+ padding-top: 188px;
 }
 
 .hero-btn {
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 0;
   font-family: inherit;
   font-weight: 500;
   font-size: var(--main-text-size);
   line-height: var(--typical-lh);
   letter-spacing: 0.04em;
   color: var(--main-button-text-color);
-  cursor: pointer;
   background: var(--main-button-bg-color);
 }
 .hero-btn:is(:hover, :focus) {
@@ -128,6 +204,7 @@ body {
 }
 
 .advantadest-list {
+  /* display: flex; */
 }
 
 .list {
@@ -142,6 +219,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+  margin-bottom: 8px;
 }
 
 .advantadest-text {
@@ -162,22 +240,27 @@ body {
   color: var(--main-title-color);
 }
 .services-list {
+  /* display: flex; */
 }
 .list {
 }
-.services-item {
-}
+/* .services-item:not(:nth-child(3n)) {
+  margin-right: 24px;
+} */
 
 /* -----------------Сулція4 - TEAM------------------ */
 .team {
   background-color: #f4f4fd;
 }
 .team-list {
+  /* display: flex; */
 }
 .list {
 }
-.team-item {
-}
+/* .team-item:not(:nth-child(4n)) {
+  margin-right: 24px;
+} */
+
 .team-title {
   font-weight: 500;
   font-size: 20px;
@@ -185,6 +268,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+  margin-bottom: 8px;
 }
 .team-text {
   font-size: var(--main-text-size);
@@ -195,6 +279,11 @@ body {
 /* -----------------FOOTER---------------- */
 .footer {
   background-color: var(--second-bg-dark-color);
+}
+
+.footer-container {
+  width: 264px;
+  padding: 100px 0;
 }
 
 .footer-logo > span {
@@ -218,6 +307,7 @@ color: #4D5AE5;}
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  margin-bottom: 16px;
 }
 .link {
 }
@@ -233,6 +323,12 @@ color: #4D5AE5;}
 
 .filter {
 }
+
+.filter-container {
+padding-top: 96px;
+padding-bottom: 72px;
+}
+
 .filter-list {
 }
 
@@ -269,17 +365,25 @@ background: #F4F4FD;
 }
 
 .gallery-list {
+  /* display: flex; */
 }
 .list {
 }
-.gallery-item {
+/* .gallery-item:not(:nth-child(3n)) {
+  margin-right: 24px;
 }
+
+.gallery-item:not(:nth-last-child(-n+3)) {
+  margin-bottom: 48px;
+} */
+
 .gallery-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+  margin-bottom: 8px;
 }
 .gallery-text {
   font-size: var(--main-text-size);
