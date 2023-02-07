@@ -54,9 +54,9 @@ button {
 .peage-header-container {
   display: flex;
 }
+
 .dflist {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -92,10 +92,9 @@ padding-bottom: 120px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
-
-  
   margin-right: 76px;
 }
+
 .header-logo > span {
   font-family: 'Raleway';
   font-weight: 800;
@@ -105,12 +104,13 @@ padding-bottom: 120px;
   text-transform: uppercase;
   color: #4d5ae5;
 }
+
 .hader-list {
   display: flex;
   align-items: center;
 }
-.header-item:not(:last-child) {
-  margin-right: 40px;
+.hader-list {
+  gap: 40px;
 }
 
 .header-link {
@@ -134,8 +134,8 @@ padding-bottom: 120px;
   display: flex;
   align-items: center;
 }
-.address-item:not(:last-child) {
-  margin-right: 40px;
+.address-item {
+  gap: 40px;
 }
 
 .address-tel, .address-mailo {
@@ -151,7 +151,7 @@ padding-bottom: 120px;
   color: var(--activ-link-hover-color);
 }
 
-/* ------------СЕККЦІЯ1--HERRO---------------- */
+/* ------------СЕККЦІЯ1--HERO---------------- */
 .hero {
   background-color: var(--second-bg-dark-color);
   height: 600px;
@@ -163,7 +163,7 @@ padding-bottom: 120px;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
-  width: 500px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
  margin-bottom: 48px;
@@ -204,7 +204,6 @@ padding-bottom: 120px;
 }
 
 .advantadest-list {
-  /* display: flex; */
 }
 
 .list {
@@ -226,10 +225,13 @@ padding-bottom: 120px;
   font-size: var(--main-text-size);
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 
 /* --------------Секція3 - SERVISES----------------- */
-.services {
+.services-section {
+  padding-bottom: 120px;
+
 }
 .services-title {
   font-size: 36px;
@@ -238,29 +240,42 @@ padding-bottom: 120px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-title-color);
+  margin-bottom: 72px;
 }
 .services-list {
-  /* display: flex; */
 }
 .list {
 }
-/* .services-item:not(:nth-child(3n)) {
-  margin-right: 24px;
-} */
 
 /* -----------------Сулція4 - TEAM------------------ */
-.team {
+.team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: #f4f4fd;
+}
+
+.team-title-container {
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+color: #2E2F42;
+margin-bottom: 72px;
 }
 .team-list {
   /* display: flex; */
 }
 .list {
 }
-/* .team-item:not(:nth-child(4n)) {
-  margin-right: 24px;
-} */
 
+.team-text-wraper {
+padding-top: 32px;
+padding-bottom: 32px;
+border-radius: 0px 0px 4px 4px;
+border: solid #E7E9FC;
+border-width: 0px 1px 1px 1px;
+background-color: #fff;
+}
 .team-title {
   font-weight: 500;
   font-size: 20px;
@@ -322,6 +337,8 @@ color: #4D5AE5;}
 /*-секція-фільтрів- */
 
 .filter {
+  padding-bottom: 120px;
+  background-color: #ffffff;
 }
 
 .filter-container {
@@ -329,12 +346,29 @@ padding-top: 96px;
 padding-bottom: 72px;
 }
 
+.filter-wraper {
+margin-bottom: 72px;
+padding-top: 92px;
+}
+
 .filter-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dflist-filter {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
 .filtr-item {
 }
 .filtr-btn {
+border: 1px solid #E7E9FC;
+border-radius: 4px;
+min-width: 69px;
+height: 48px;  
 font-style: inherit;
 font-weight: 500;
 font-size: var(--main-text-size);
@@ -365,17 +399,29 @@ background: #F4F4FD;
 }
 
 .gallery-list {
-  /* display: flex; */
 }
 .list {
 }
-/* .gallery-item:not(:nth-child(3n)) {
-  margin-right: 24px;
+
+.dflist-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
-.gallery-item:not(:nth-last-child(-n+3)) {
-  margin-bottom: 48px;
-} */
+.gallery-item {
+  width: calc((100% - 48px)/3);
+}
+
+.gallery-wraper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-radius: 0px 0px 4px 4px;
+  border: solid #E7E9FC;
+  border-width: 0px 1px 1px 1px;
+}
 
 .gallery-title {
   font-weight: 500;
@@ -389,4 +435,8 @@ background: #F4F4FD;
   font-size: var(--main-text-size);
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
+}
+
+.header-border {
+  border-bottom: 1px solid #000;
 }
