@@ -133,6 +133,7 @@ padding-bottom: 120px;
 .address-list {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 .address-item {
   gap: 40px;
@@ -156,6 +157,7 @@ padding-bottom: 120px;
   background-color: var(--second-bg-dark-color);
   height: 600px;
   text-align: center;
+   padding-top: 188px;
 }
 .hero-title {
   font-size: 56px;
@@ -167,7 +169,7 @@ padding-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
  margin-bottom: 48px;
- padding-top: 188px;
+
 }
 
 .hero-btn {
@@ -347,8 +349,8 @@ padding-bottom: 72px;
 }
 
 .filter-wraper {
-margin-bottom: 72px;
 padding-top: 92px;
+padding-bottom: 72px;
 }
 
 .filter-list {
@@ -438,5 +440,6 @@ background: #F4F4FD;
 }
 
 .header-border {
-  border-bottom: 1px solid #000;
+  width: 100%;
+  border-bottom: 1px solid #E7E9FC;
 }
